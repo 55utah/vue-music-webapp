@@ -3,6 +3,7 @@
     <svg class="mainSvg" :width="radius" :height="radius" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <circle cx="50%" cy="50%" :r="radius" class="circle circle_a"></circle>
         <circle cx="50%" cy="50%" :r="radius" class="circle circle_b" :style="{strokeDasharray: dashValue}"></circle>
+        <!-- 圆角也可以做，stroke-linecap可以设置描边末端的样式，stroke-linecap="round"即可  -->
     </svg>
     <slot></slot>
 </div>
